@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Capiz Website</title>
+    <link rel="icon" href="images/capiz-nav-logo.png"/>
+    <meta charset="utf-8" />
+    <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet"/>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script nonce="6ae3f23f-d88c-4642-812a-fb90469aa23f">
+      (function (w, d) {
+        !(function (eK, eL, eM, eN) {
+          eK.zarazData = eK.zarazData || {};
+          eK.zarazData.executed = [];
+          eK.zaraz = { deferred: [], listeners: [] };
+          eK.zaraz.q = [];
+          eK.zaraz._f = function (eO) {
+            return function () {
+              var eP = Array.prototype.slice.call(arguments);
+              eK.zaraz.q.push({ m: eO, a: eP });
+            };
+          };
+          for (const eQ of ["track", "set", "debug"])
+            eK.zaraz[eQ] = eK.zaraz._f(eQ);
+          eK.zaraz.init = () => {
+            var eR = eL.getElementsByTagName(eN)[0],
+              eS = eL.createElement(eN),
+              eT = eL.getElementsByTagName("title")[0];
+            eT && (eK.zarazData.t = eL.getElementsByTagName("title")[0].text);
+            eK.zarazData.x = Math.random();
+            eK.zarazData.w = eK.screen.width;
+            eK.zarazData.h = eK.screen.height;
+            eK.zarazData.j = eK.innerHeight;
+            eK.zarazData.e = eK.innerWidth;
+            eK.zarazData.l = eK.location.href;
+            eK.zarazData.r = eL.referrer;
+            eK.zarazData.k = eK.screen.colorDepth;
+            eK.zarazData.n = eL.characterSet;
+            eK.zarazData.o = new Date().getTimezoneOffset();
+            if (eK.dataLayer)
+              for (const eX of Object.entries(
+                Object.entries(dataLayer).reduce((eY, eZ) => ({
+                  ...eY[1],
+                  ...eZ[1],
+                }))
+              ))
+                zaraz.set(eX[0], eX[1], { scope: "page" });
+            eK.zarazData.q = [];
+            for (; eK.zaraz.q.length;) {
+              const e_ = eK.zaraz.q.shift();
+              eK.zarazData.q.push(e_);
+            }
+            eS.defer = !0;
+            for (const fa of [localStorage, sessionStorage])
+              Object.keys(fa || {})
+                .filter((fc) => fc.startsWith("_zaraz_"))
+                .forEach((fb) => {
+                  try {
+                    eK.zarazData["z_" + fb.slice(7)] = JSON.parse(
+                      fa.getItem(fb)
+                    );
+                  } catch {
+                    eK.zarazData["z_" + fb.slice(7)] = fa.getItem(fb);
+                  }
+                });
+            eS.referrerPolicy = "origin";
+            eS.src =
+              "../../cdn-cgi/zaraz/sd0d9.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));
+            eR.parentNode.insertBefore(eS, eR);
+          };
+          ["complete", "interactive"].includes(eL.readyState)
+            ? zaraz.init()
+            : eK.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, 0, "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container-fluid">
+        <a href="index-2.html" id="navbar-Logo" class="trackme navbar-brand"><img src="images/capiz-logo.jpg" class="mx-auto d-block img-fluid" id="navbarbrand" alt="capiz-logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index-2.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="explorecapiz.html" class="nav-link">Explore Capiz</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience Capiz</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="events.html">Events</a>
+                <a class="dropdown-item" href="arts&crafts.html">Arts & Crafts</a>
+                <a class="dropdown-item" href="nature.html">Nature</a>
+                <a class="dropdown-item" href="faith-based.html">Faith-Based</a>
+                <a class="dropdown-item" href="farm.html">Farm</a>
+                <a class="dropdown-item" href="culture&heritage.html">Culture & Heritage</a>
+                <a class="dropdown-item" href="food.html">Food</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tourism Services</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="adventure&eco-tourism.html">Adventure and Eco Tourism</a>
+                <a class="dropdown-item" href="touroperators.html">Tour Operators</a>
+                <a class="dropdown-item" href="convention-centers.html">Convention Centers</a>
+                <a class="dropdown-item" href="accomodations.html">Accomodations</a>
+                <a class="dropdown-item" href="specialty-shops.html">Specialty Shops</a>
+                <a class="dropdown-item" href="restaurants.html">Restaurants</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Government</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Capiz</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="home-slider owl-carousel">
+        <div class="slider-item" style="background-image: url('images/capiz-heritage-banner_Church.jpg')" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row slider-text align-items-center">
+              <div class="col-md-7 col-sm-12 ftco-animate">
+                <p class="breadcrumbs">
+                  <span class="mr-2"><a href="index-2.html">Home</a></span>
+                  <span>Culture & Heritage</span>
+                </p>
+                <h1 class="mb-3 font-weight-bold">CULTURE AND HERITAGE</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div class="py-5 container">
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Panublion.jpg"
+                        alt="Ang Panublion Museum" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Ang Panublion Museum</h5>
+                        <p class="card-text">Hughes St., Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>The whitewashed museum was originally built as a water tank on 1910, through the efforts of
+                            President Pastor Alcasar, the third President of the town of Capiz (1908-1912), to provide water
+                            to the local residents during the dry season. It was constructed near the “municipio.” The water
+                            flowed from the roof of the two-storey municipal building to the water tank which was 11.5 meter
+                            in diameter and 6.10 meters in height, with walls that are 11 inches thick. It was luckily
+                            spared from the devastation of World War II because of its strong framework.</p>
+    
+                        <p>After the war, offices were built around the tank completely hiding it from view with only a
+                            water spout visible. In 1993, the offices were demolished and for the first time in three
+                            decades, the water tank was seen again.</p>
+    
+                        <p>"Panublion", a Hiligaynon term which means "heritage", is the official name of the museum. Over
+                            the years, it has outlived its purpose since the town came up with a modern water system. Thus,
+                            the birth of the Panublion Museum by Mayor Juliano Alba in the year 1992. It was named Panublion
+                            since it is considered as a gift from the past.</p>
+    
+                        <p>The Panublion Museum features the memorabilia of the prominent sons and daughters of the Province
+                            of Capiz and collections of religious and cultural icons, artifacts and artworks.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Birthplace of Manuel Roxas.jpg"
+                        alt="Birthplace of Manuel A. Roxas" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Birthplace of Manuel A. Roxas</h5>
+                        <p class="card-text">Zamora St., Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>The two-story hardwood stone house of then Governor of Capiz and the First President of the Third
+                            Republic of the Philippines is located at Rizal St., corner Zamora St., in Roxas City. This
+                            house that have withstood the test of time was inherited by Roxas from his parents, Gerardo
+                            Roxas, Sr., and Rosario Acuña, which they also inherited from the parents of Gerardo Roxas.
+                            Today, the house is still under the care of the relatives of Roxas and it houses old furniture
+                            and memorabilia of the Roxas family.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Capiz Bridge.jpg"
+                        alt="Capiz Bridge" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Capiz Bridge</h5>
+                        <p class="card-text">Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>The old and imposing Capiz Bridge has remained strong and firm since it was built in 1910. This
+                            bridge used to be a wooden carpenter bridge. Already more than a century old, it follows the
+                            classic European architectural design. Connecting the commercial center of the city to the main
+                            thoroughfare, traversing the Panay River, the bridge is a silent witness to various changes that
+                            ushered in progress and development in the city. Like the old bridge, equally alluring is the
+                            huge stretch of the Panay River that traverses the very heart of the city.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Rizal Monument.jpg"
+                        alt="Rizal Monument" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Rizal Monument</h5>
+                        <p class="card-text">Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>This monument located in front of the Provincial Capitol is recognized as the second oldest
+                            monument of Rizal in the country. It was sculpted by Tomas Confesor of Manila and was built in
+                            1911 through the efforts of then governor Jose Cortez Altavas. On its die are inscribed Spanish
+                            words: Patria, Justicia and Libertad which were names of Gov. Altavas' three daughters. The
+                            words also mean Homeland, Justice and Liberty respectively.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Capitol_0.jpg"
+                        alt="Capiz Provincial Capitol" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Capiz Provincial Capitol</h5>
+                        <p class="card-text">Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>In the 3,000-square meter lot where the Capiz Provincial Capitol now stands used to be a
+                            two-story government-owned wooden house that was destroyed by a typhoon. Under the American
+                            regime, Gov. William Howard Taft appointed Simplicio Jugo Vidal as the first Civil Governor of
+                            Capiz after the Philippine Commission of the United States established the provincial government
+                            of Capiz on April 15, 1901 through the passage of Act 115 titled, “An Act Extending the
+                            Provisions of the Provincial Government Act to the Province of Capiz.” It was under Vidal’s
+                            3-year term that the wooden house was rehabilitated.</p>
+    
+                        <p>It was in 1911, under Gov. Jose Cortez Altavas that the concrete building was constructed. In the
+                            same year, the Philippine flag was flown in front of the Capitol, and the monument of Jose Rizal
+                            was erected.</p>
+    
+                        <p>The third story of the Capitol was constructed between 1945-1949. The concrete Eagle design on
+                            the façade of the building which can be seen to this day, was set to symbolize the influence of
+                            the United States in Capiz.</p>
+    
+                        <p>Under Gov. Jose Borda in 1989, the Provincial Capitol was remodeled. The Governor’s Hall had
+                            major renovation and the windows were decorated with pios or Capiz shells that gave the building
+                            a grander look.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Immaculate Conception Cathedral.jpg"
+                        alt="Immaculate Concepcion Metropolitan Cathedral" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Immaculate Concepcion Metropolitan Cathedral</h5>
+                        <p class="card-text">Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>Founded in 1707 by Augustinian missionaries, the Immaculate Conception Metropolitan Cathedral is
+                            one of the oldest churches in the Panay Island.</p>
+    
+                        <p>The church is standing in the heart of Roxas City facing the Panay River and the old Capiz
+                            Bridge; and is celebrated for standing the test of weather and time. Not only it has served as a
+                            place of worship for more than 300 years, but it has also become a destination for pilgrimage
+                            experience and faith-based tourism in the province.</p>
+    
+                        <p>This church was built with hardwood and bamboos before 1698. However, a strong typhoon on January
+                            4, 1698 destroyed it and the convent. The stone church was then constructed from 1728 to 1732
+                            but in the unfortunate year of 1787, it was destroyed by an earthquake.</p>
+    
+                        <p>From 1870 to 1885, it was rebuilt with stone and galvanized iron through the efforts of Fr.
+                            Apolinar Alvarez, O.S.A. And on the succeeding years, from 1885 to 1890, Fr. Lesmes Perez,
+                            O.S.A. made restorations by installing the ceiling with galvanized iron and plastering the walls
+                            with stucco and adding three grandiose altars.</p>
+    
+                        <p>This church was also considered as one of the most beautiful churches in the Philippines.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Filamer.jpg"
+                        alt="Filamer Christian University" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Filamer Christian University</h5>
+                        <p class="card-text">Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>From being a home school, Filamer Christian University celebrates more than 100 years of
+                            Christian Education. It was founded in 1904 by Rev. Joseph Robbins and his wife, Cecilia Sainz,
+                            as a primary school for orphaned and homeless children. During the wage of the Second World War,
+                            Filamer closed and was used as garrison by the Japanese soldiers. When the civil government
+                            reconstituted after the war, the school reopened with a secondary level under the directory of
+                            the first Filipino principal, Jacoba Ibañez. In 1952, it was named Filamer Christian Institute,
+                            signifying the ties between the Filipinos and the Americans working together to run the
+                            institute. In 1985, it was officially named as Filamer Christian College. By July of 2010, it
+                            was granted the university status, thus named, Filamer Christian University.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Sta Monica Church_0.jpg"
+                        alt="Sta. Monica Church" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Sta. Monica Church</h5>
+                        <p class="card-text">Panay, Capiz</p>
+                        <p class="card-text">
+                        <p>Built in 1774, this church in Panay town is about 250-foot long and 80-foot wide with walls made
+                            of coral blocks and are nine-foot thick. The central altar is an elaborate retablo of silver and
+                            hardwood in florid Baroque style. The lateral altars have intricately carved tiers of niches for
+                            images of saints. The five-story belfry houses a huge, old bell, surrounded by eight smaller
+                            bells. Popularly known as the Panay Bell, it is cast from 70 sacks of coins contributed by the
+                            townsfolk.&nbsp; It is 7 ft. in diameter, has a height of 5 ft. and weighs 10.4 tons, and
+                            recognized as the Largest Catholic Church Bell in Southeast Asia, which sound can be heard from
+                            8 kilometers away.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Sto. Tomas.jpg"
+                        alt="Sto. Tomas de Villanueva Church" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Sto. Tomas de Villanueva Church</h5>
+                        <p class="card-text">Dao, Capiz</p>
+                        <p class="card-text">
+                        <p>The church is made of coral stone, very refined and marble-like. It has one main nave and very
+                            spacious transept. The façade is characterized by the massive wall that contrasts with some
+                            rather slender columns. It is a one-story affair and has a very small Greek pediment which puts
+                            the whole façade off-balance. The main entrance, a semi-circular arch, is flanked on both sides
+                            by two almost equally large arched entrances separated by paired Tuscan columns mounted on
+                            heavily built rectangular pedestals. The cornice is slightly decorated with triglyphs.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/St. Martin.jpg"
+                        alt="St. Martin of Tours Church" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">St. Martin of Tours Church</h5>
+                        <p class="card-text">Dumalag, Capiz</p>
+                        <p class="card-text">
+                        <p>This century-old Church’s interior is shaped like a cross and is made from yellow sandstone. The
+                            Church’s six arched windows at each side with columns between them reaching the roof with
+                            buttresses at the side give it a different look.&nbsp; It was finished in 1873 when Fr. Angel
+                            Abasolo was the parish priest of the town.&nbsp; At the front left side of the church is the
+                            five-storey belfry housing five bells of different sizes, all made in 1881.</p>
+    
+                        <p>Other historical accounts also point to an earlier construction of the church. According to Henry
+                            Florida Funtecha, a historian from Barangay Duran, the first church and convent were constructed
+                            between 1600 and 1720. Under the leadership of Padre Agustin Duran in 1833, the church was
+                            constructed with yellow sandstone and its interior walls were decorated with Padre Juan Carlos’
+                            paintings. This corroborated with Fr. Pedro G. Galende’s account in his book Angels in Stone:
+                            Augustinian Churches in the Philippines about the possibility that it was Padre Angel Abasolo
+                            who initiated the construction of the church, and having it rebuilt from a previous structure.
+                        </p>
+    
+                        <p>On January 10, 1875, the church was destroyed by a typhoon. In 1948, a strong earthquake heavily
+                            damaged the church and other structures in the town. Only the church’s walls and the belfry were
+                            left standing. A temporary church was built in front of the present structure until it was
+                            reconstructed in the 1950’s under Monsignor Jesus N. Frantilla as parish priest.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Balisong_0.jpg" alt="Balisong Hill"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Balisong Hill</h5>
+                        <p class="card-text">Natividad, Pilar, Capiz</p>
+                        <p class="card-text">
+                        <p>Balisong Hill, also known as the Calupugan Hill, is a sloping hill in the barangay of San Esteban
+                            in Pilar Capiz surrounded by caves, fishponds and mangroves. It was named after the Balisong
+                            River which once flowed at the foot of the hill.&nbsp;</p>
+    
+                        <p>The Balisong Hill served as a silent witness to a battle between the Spanish soldiers and the
+                            Filipino revolutionaries known in history as the Battle of Balisong. It was chosen by the
+                            revolutionary leaders as the site of their camp not only because it was a strategic location but
+                            that the surrounding provided a good source of food, water and big rocks that supplemented their
+                            meager ammunition.&nbsp;</p>
+    
+                        <p>The Battle of Balisong began when Juan Arce, the revolutionary organizer in the area of Sara,
+                            Iloilo; Pilar, Cuartero, Dao and Pan-ay, was informed by his messenger of the arrival of the
+                            Spanish warship of 500 cazadores led by Capiz Gov. Juan Herrero. Upon Herrero’s order, the first
+                            group of cazadores moved forward and started the attack. When they were close enough, Juan Arce
+                            signaled to return fire. The Spaniards were better armed and had outnumbered the revolutionaries
+                            by 20 to 1. When they ran out of ammunition, they threw stones at their enemies causing minimal
+                            damage. Then they cut the anchoring vines of the 3-meter-long logs that they positioned on the
+                            summit of the hill, and rolled them to the cazadores. After three hours of intense fighting,
+                            Arce’s gun was hit by a bullet from the Spanish troops and bounced to his forehead. Before he
+                            died, he ordered Dalmacio Patricio, his right hand man to escape.</p>
+    
+                        <p>The revolutionaries lost Arce and Jorge Sinson, while the Spanish troops lost nearly 200
+                            soldiers.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Capiz Tourism Website</h2>
+                <p>
+                  Thank you for visiting this page. Hope to see you in Capiz!
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">ABOUT CAPIZ</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-2 d-block">History</a></li>
+                  <ul class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">How to Get There</ul>
+                    <li><a href="#" class="py-2 d-block">Transport Operators</a></li>
+                    <li><a href="#" class="py-2 d-block">Airport</a></li>
+                    <li><a href="#" class="py-2 d-block">Seaport</a></li>
+                    <li><a href="#" class="py-2 d-block">Terminals</a></li></ul>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">TOURISM SERVICES</h2>
+                <ul class="list-unstyled">
+                  <li><a href="adventure&eco-tourism.html" class="py-2 d-block">Adventure and Eco-Tourism</a></li>
+                  <li><a href="touroperators.html" class="py-2 d-block">Tour Operators</a></li>
+                  <li><a href="convention-centers.html" class="py-2 d-block">Convention Centers</a></li>
+                  <li><a href="accomodations.html" class="py-2 d-block">Accomodations</a></li>
+                  <li><a href="specialty-shops.html" class="py-2 d-block">Specialty Shops</a></li>
+                  <li><a href="restaurants.html" class="py-2 d-block">Restaurants</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">CONTACT INFO</h2>
+                <ul class="list-unstyled">
+                  <li><a class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">Provincial Tourism and Cultural Affairs Office Capiz Provincial Capitol, Roxas City, Capiz, 5800</a></li>
+                  <li><a href="#" class="py-2 d-block"><span class="__cf_email__"data-cfemail="ff96919990bf86908a8d8c968b9ad19c9092"
+                    >capiz.tourism@gmail.com</span></a></li>
+                  <li><a class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">(036) 6212-935</a></li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <ul
+                  class="ftco-footer-social list-unstyled float-md-right float-lft"
+                >
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>
+                Copyright &copy;
+                <script
+                  data-cfasync="false"
+                  src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+                ></script>
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart" aria-hidden="true"></i> by
+                <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle
+            class="path-bg"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke="#eeeeee"
+          />
+          <circle
+            class="path"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke-miterlimit="10"
+            stroke="#F96D00"
+          />
+        </svg>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/bootstrap-datepicker.js"></script>
+      <script src="js/jquery.timepicker.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+      <script src="js/google-map.js"></script>
+      <script src="js/main.js"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+  
+        gtag("config", "UA-23581568-13");
+      </script>
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"7863b6172c430467","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  
+    <!-- Mirrored from preview.colorlib.com/theme/voyage/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Jan 2023 08:55:28 GMT -->
+  </html>
+  

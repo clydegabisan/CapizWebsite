@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <title>Capiz Website</title>
+    <link rel="icon" href="images/capiz-nav-logo.png"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet"/>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css\city.css"/>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script nonce="39cfabd5-6bce-4bba-956e-e1f2bd739ae6">
+      (function (w, d) {
+        !(function (eK, eL, eM, eN) {
+          eK.zarazData = eK.zarazData || {};
+          eK.zarazData.executed = [];
+          eK.zaraz = { deferred: [], listeners: [] };
+          eK.zaraz.q = [];
+          eK.zaraz._f = function (eO) {
+            return function () {
+              var eP = Array.prototype.slice.call(arguments);
+              eK.zaraz.q.push({ m: eO, a: eP });
+            };
+          };
+          for (const eQ of ["track", "set", "debug"])
+            eK.zaraz[eQ] = eK.zaraz._f(eQ);
+          eK.zaraz.init = () => {
+            var eR = eL.getElementsByTagName(eN)[0],
+              eS = eL.createElement(eN),
+              eT = eL.getElementsByTagName("title")[0];
+            eT && (eK.zarazData.t = eL.getElementsByTagName("title")[0].text);
+            eK.zarazData.x = Math.random();
+            eK.zarazData.w = eK.screen.width;
+            eK.zarazData.h = eK.screen.height;
+            eK.zarazData.j = eK.innerHeight;
+            eK.zarazData.e = eK.innerWidth;
+            eK.zarazData.l = eK.location.href;
+            eK.zarazData.r = eL.referrer;
+            eK.zarazData.k = eK.screen.colorDepth;
+            eK.zarazData.n = eL.characterSet;
+            eK.zarazData.o = new Date().getTimezoneOffset();
+            if (eK.dataLayer)
+              for (const eX of Object.entries(
+                Object.entries(dataLayer).reduce((eY, eZ) => ({
+                  ...eY[1],
+                  ...eZ[1],
+                }))
+              ))
+                zaraz.set(eX[0], eX[1], { scope: "page" });
+            eK.zarazData.q = [];
+            for (; eK.zaraz.q.length; ) {
+              const e_ = eK.zaraz.q.shift();
+              eK.zarazData.q.push(e_);
+            }
+            eS.defer = !0;
+            for (const fa of [localStorage, sessionStorage])
+              Object.keys(fa || {})
+                .filter((fc) => fc.startsWith("_zaraz_"))
+                .forEach((fb) => {
+                  try {
+                    eK.zarazData["z_" + fb.slice(7)] = JSON.parse(
+                      fa.getItem(fb)
+                    );
+                  } catch {
+                    eK.zarazData["z_" + fb.slice(7)] = fa.getItem(fb);
+                  }
+                });
+            eS.referrerPolicy = "origin";
+            eS.src =
+              "../../cdn-cgi/zaraz/sd0d9.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));
+            eR.parentNode.insertBefore(eS, eR);
+          };
+          ["complete", "interactive"].includes(eL.readyState)
+            ? zaraz.init()
+            : eK.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, 0, "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container-fluid">
+        <a href="index-2.html" id="navbar-Logo" class="trackme navbar-brand"><img src="images/capiz-logo.jpg" class="mx-auto d-block img-fluid" id="navbarbrand" alt="capiz-logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index-2.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="explorecapiz.html" class="nav-link">Explore Capiz</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience Capiz</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="events.html">Events</a>
+                <a class="dropdown-item" href="arts&crafts.html">Arts & Crafts</a>
+                <a class="dropdown-item" href="nature.html">Nature</a>
+                <a class="dropdown-item" href="faith-based.html">Faith-Based</a>
+                <a class="dropdown-item" href="farm.html">Farm</a>
+                <a class="dropdown-item" href="culture&heritage.html">Culture & Heritage</a>
+                <a class="dropdown-item" href="food.html">Food</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tourism Services</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="adventure&eco-tourism.html">Adventure and Eco Tourism</a>
+                <a class="dropdown-item" href="touroperators.html">Tour Operators</a>
+                <a class="dropdown-item" href="convention-centers.html">Convention Centers</a>
+                <a class="dropdown-item" href="accomodations.html">Accomodations</a>
+                <a class="dropdown-item" href="specialty-shops.html">Specialty Shops</a>
+                <a class="dropdown-item" href="restaurants.html">Restaurants</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Government</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Capiz</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="home-slider owl-carousel">
+      <div
+        class="slider-item"
+        style="background-image: url('images/i-love-capiz.jpg')"
+        data-stellar-background-ratio="0.5"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text align-items-center">
+            <div class="col-md-7 col-sm-12 ftco-animate">
+              <p class="breadcrumbs">
+                <span class="mr-2"><a href="index-2.html">Home</a></span>
+                <span>About Capiz</span>
+              </p>
+              <h1 class="mb-3 font-weight-bold">ABOUT CAPIZ</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-section-2">
+      <div class="container-fluid d-flex">
+        <div class="section-2-blocks-wrapper row no-gutters">
+          <div
+            class="img col-sm-12 col-lg-6"
+            style="background-image: url('images/capiz-exploremap.png')"
+          >
+            <a href="videos/CAPTURE CAPIZ TODAY!.mp4" class="button popup-vimeo"
+              ><span class="ion-ios-play"></span
+            ></a>
+          </div>
+          <div class="text col-lg-6 ftco-animate">
+            <div class="text-inner align-self-start">
+              <h3><b>
+                <span style="color:#1cb78d">CAPTIVATING</span> <span style="color:#20265b">CAPIZ!</span> 
+              </h3></b>
+              <p>
+                Capiz is a province in the Western Visayas region that is home to Roxas City,
+                also known as the <i><b>Seafood Capital</i> of the Philippines</b>. Aside from the mouthwatering seafood dishes,
+                Capiz also boasts of enchanting caves, historical landmarks, and beaches that will fulfill your wanderlust.
+              </p>
+              <p>
+                If you're looking to feast on the freshest seafood and a fun adventure in the Philippines,
+                then you should add Capiz to your travel bucket list.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="py-4 container">
+      <div class="mt-3 row">
+        <div class="col">
+          <h5>PROVINCE OF CAPIZ</h5>
+          <article>
+            <p>Capiz is one of the six provinces in Western Visayas found on the northeastern portion in the island of
+              Panay. It occupies the northeastern part of the triangular island of Panay with a total land area of 2,633.2
+              square kilometers. Shaped like an open palm, it is situated at the heart of the Philippine Archipelago at 11’
+              09 to 11’ 40’ North Latitude and 122 11’ to 123 05’ East Longitude. The Province is bounded by the Sibuayan
+              Sea on the North, where Roxas City and the six (6) coastal municipalities of Ivisan, Sapian, Panay,
+              Pontevedra, Pres. Roxas, and Pilar are wholly dependent on fishing for their existence. It is bounded on the
+              South and Southeast by Iloilo Province, on the Southwest by the Province of Antique, and on the West and
+              Northwest by the Province of Aklan.</p>
+            <p>Capiz is composed of 16 municipalities and one city, Roxas, the provincial capital. It is divided into two
+              districts: Roxas City, Pan-ay, Panitan, Pontevedra, Maayon, President Roxas and Pilar comprise the first, and
+              Ivisan, Sapian, Sigma, Dao, Mambusao, Dumalag, Jamindan, Dumarao, Tapaz and Cuartero, the second. Roxas City
+              and the municipalities of Panay, Pontevedra, President Roxas, Pilar, Ivisan and Sapian are coastal while the
+              rest are landlocked.</p>
+            <p>The coast of Capiz sustains the vibrant fishing industry of the province. Its rich fishing grounds is the
+              reason why Capiz is dubbed the seafood capital.</p>
+          </article>
+        </div>
+      </div>
+      <div class="mt-3 row">
+        <div class="col">
+          <h5>HISTORY</h5>
+          <article>
+            <p>Capiz is a unique interplay of history, myths and seafoods. Interesting, though nobody is certain of its
+              veracity, is how Capiz got its name, one legend narrates that the name of the Province is in honor of one of
+              the twin granddaughters of Datu Bankaya, the leader of the district comprising today’s Capiz and Aklan. He
+              divided his territories into two: Kapid and Akean. The Spaniards who later settled in the area adopted the
+              names of Capiz and Aklan. Another legend says that it was Datu Bangkaya’s wife who gave birth to twin
+              daughters sometime in 1570. Twin in local Capisnon language is “kapid”.</p>
+            <p>The significance of seafood in the lives of early inhabitants was clearly reflected in other versions: when
+              the Spaniards came to Capiz they saw plenty of a certain fish. Asked as to the name of the fish, the natives
+              answered “lapis”. It is claimed that the conquerors heard “kapis” and so the place was named. Most popular
+              version is that when the Spaniards settled in Capiz, they found in here abundance of mollusk known in the
+              dialect as “pios” or “kapis”. The shell called “capiz” is utilized for windows and decorative items.</p>
+            <p>In precolonial times, Panay Island was called Sinugbahan. Capiz was part of Akean (now Aklan) and its name
+              was Ilaya, thus its people were called Ilayahon or Ilayanon.</p>
+            <p>In 1569, Miguel Lopez de Legaspi decided to leave Cebu to settle in Bamban (the present town of Panay). The
+              second Spanish settlement in the country established in 1567 by his nephew, Felipe de Salcedo. One of the two
+              main reasons for this is he saw the advantage of the place following the report of one of his captains: “pan
+              hay in esta isla” (there is food in the island). In August 27, 1570, Legaspi created the province of Panai. In
+              1572, he founded the province of Ogtong (Oton) in the southern part of the island, and to it he annexed Akean.
+              He placed Panai under the administrative jurisdiction of Ogtong.</p>
+            <p>In 1582, during the Governor General Ronquillo de Peñalosa’s term, Panai was renamed Capiz and the name Panai
+              (later spelled Panay) was given to the island. When the Spaniard reorganized the island in 1703, they made
+              Akean a district of Capiz. On April 15, 1901, the United States Philippine Commission through Act No. 115
+              established the second civil government of Capiz. Aklan which was then part of Capiz was separated on April
+              25, 1956 through Republic Act 1414 signed by Pres. Ramon Magsaysay.</p>
+            <p>Today, the people of Capiz are called Capisnon (Ca-PIS-non). They predominantly belong to the brown race.
+              Initially, they were a blend of the indigene, the Negrito, the Indonesian and the Malay. Later, the Arab,
+              Chinese, American and other races modified the blend.</p>
+            <p>Capiz is a home of two Indigenous Peoples Communities, Panay Bukidnon and Ati, who had preserved their
+              culture by faithfully passing it on from generation to generation. Their philosophy, values, traditions,
+              rituals, language, games, foods, architecture, literature, music, dance, embroidery express a unique way of
+              life of respect and love to and interconnectedness of the Divine, fellowman and environment.</p>
+            <p>Unmatched taste of seafood, beautiful and clean environment, and inspiring cultural experience are impetus
+              combined that molded Capisnons to be highly community development-oriented and artistically inclined. It bred
+              great men and women in politics, academics, civic works, arts like Manuel A. Roxas, the first president of the
+              Republic of the Philippines; Jovita Fuentes, National Artist for Music; and Daisy Hontiveros-Avellana,
+              National Artist for Theater.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Capiz Tourism Website</h2>
+              <p>
+                Thank you for visiting this page. Hope to see you in Capiz!
+              </p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">ABOUT CAPIZ</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">History</a></li>
+                <ul class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">How to Get There</ul>
+                  <li><a href="#" class="py-2 d-block">Transport Operators</a></li>
+                  <li><a href="#" class="py-2 d-block">Airport</a></li>
+                  <li><a href="#" class="py-2 d-block">Seaport</a></li>
+                  <li><a href="#" class="py-2 d-block">Terminals</a></li></ul>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">TOURISM SERVICES</h2>
+              <ul class="list-unstyled">
+                <li><a href="adventure&eco-tourism.html" class="py-2 d-block">Adventure and Eco-Tourism</a></li>
+                <li><a href="touroperators.html" class="py-2 d-block">Tour Operators</a></li>
+                <li><a href="convention-centers.html" class="py-2 d-block">Convention Centers</a></li>
+                <li><a href="accomodations.html" class="py-2 d-block">Accomodations</a></li>
+                <li><a href="specialty-shops.html" class="py-2 d-block">Specialty Shops</a></li>
+                <li><a href="restaurants.html" class="py-2 d-block">Restaurants</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">CONTACT INFO</h2>
+              <ul class="list-unstyled">
+                <li><a class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">Provincial Tourism and Cultural Affairs Office Capiz Provincial Capitol, Roxas City, Capiz, 5800</a></li>
+                <li><a href="#" class="py-2 d-block"><span class="__cf_email__"data-cfemail="ff96919990bf86908a8d8c968b9ad19c9092"
+                  >capiz.tourism@gmail.com</span></a></li>
+                <li><a class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">(036) 6212-935</a></li>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <ul
+                class="ftco-footer-social list-unstyled float-md-right float-lft"
+              >
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li class="ftco-animate">
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;
+              <script
+                data-cfasync="false"
+                src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+              ></script>
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | This template is made with
+              <i class="icon-heart" aria-hidden="true"></i> by
+              <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+      integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+      data-cf-beacon='{"rayId":"7863b6172c430467","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <!-- Mirrored from preview.colorlib.com/theme/voyage/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Jan 2023 08:55:28 GMT -->
+</html>

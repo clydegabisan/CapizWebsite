@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <title>Capiz Website</title>
+    <link rel="icon" href="images/capiz-nav-logo.png"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet"/>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script nonce="39cfabd5-6bce-4bba-956e-e1f2bd739ae6">
+      (function (w, d) {
+        !(function (eK, eL, eM, eN) {
+          eK.zarazData = eK.zarazData || {};
+          eK.zarazData.executed = [];
+          eK.zaraz = { deferred: [], listeners: [] };
+          eK.zaraz.q = [];
+          eK.zaraz._f = function (eO) {
+            return function () {
+              var eP = Array.prototype.slice.call(arguments);
+              eK.zaraz.q.push({ m: eO, a: eP });
+            };
+          };
+          for (const eQ of ["track", "set", "debug"])
+            eK.zaraz[eQ] = eK.zaraz._f(eQ);
+          eK.zaraz.init = () => {
+            var eR = eL.getElementsByTagName(eN)[0],
+              eS = eL.createElement(eN),
+              eT = eL.getElementsByTagName("title")[0];
+            eT && (eK.zarazData.t = eL.getElementsByTagName("title")[0].text);
+            eK.zarazData.x = Math.random();
+            eK.zarazData.w = eK.screen.width;
+            eK.zarazData.h = eK.screen.height;
+            eK.zarazData.j = eK.innerHeight;
+            eK.zarazData.e = eK.innerWidth;
+            eK.zarazData.l = eK.location.href;
+            eK.zarazData.r = eL.referrer;
+            eK.zarazData.k = eK.screen.colorDepth;
+            eK.zarazData.n = eL.characterSet;
+            eK.zarazData.o = new Date().getTimezoneOffset();
+            if (eK.dataLayer)
+              for (const eX of Object.entries(
+                Object.entries(dataLayer).reduce((eY, eZ) => ({
+                  ...eY[1],
+                  ...eZ[1],
+                }))
+              ))
+                zaraz.set(eX[0], eX[1], { scope: "page" });
+            eK.zarazData.q = [];
+            for (; eK.zaraz.q.length; ) {
+              const e_ = eK.zaraz.q.shift();
+              eK.zarazData.q.push(e_);
+            }
+            eS.defer = !0;
+            for (const fa of [localStorage, sessionStorage])
+              Object.keys(fa || {})
+                .filter((fc) => fc.startsWith("_zaraz_"))
+                .forEach((fb) => {
+                  try {
+                    eK.zarazData["z_" + fb.slice(7)] = JSON.parse(
+                      fa.getItem(fb)
+                    );
+                  } catch {
+                    eK.zarazData["z_" + fb.slice(7)] = fa.getItem(fb);
+                  }
+                });
+            eS.referrerPolicy = "origin";
+            eS.src =
+              "../../cdn-cgi/zaraz/sd0d9.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));
+            eR.parentNode.insertBefore(eS, eR);
+          };
+          ["complete", "interactive"].includes(eL.readyState)
+            ? zaraz.init()
+            : eK.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, 0, "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container-fluid">
+        <a href="index-2.html" id="navbar-Logo" class="trackme navbar-brand"><img src="images/capiz-logo.jpg" class="mx-auto d-block img-fluid" id="navbarbrand" alt="capiz-logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index-2.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="explorecapiz.html" class="nav-link">Explore Capiz</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience Capiz</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="events.html">Events</a>
+                <a class="dropdown-item" href="arts&crafts.html">Arts & Crafts</a>
+                <a class="dropdown-item" href="nature.html">Nature</a>
+                <a class="dropdown-item" href="faith-based.html">Faith-Based</a>
+                <a class="dropdown-item" href="farm.html">Farm</a>
+                <a class="dropdown-item" href="culture&heritage.html">Culture & Heritage</a>
+                <a class="dropdown-item" href="food.html">Food</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tourism Services</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="adventure&eco-tourism.html">Adventure and Eco Tourism</a>
+                <a class="dropdown-item" href="touroperators.html">Tour Operators</a>
+                <a class="dropdown-item" href="convention-centers.html">Convention Centers</a>
+                <a class="dropdown-item" href="accomodations.html">Accomodations</a>
+                <a class="dropdown-item" href="specialty-shops.html">Specialty Shops</a>
+                <a class="dropdown-item" href="restaurants.html">Restaurants</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Government</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Capiz</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="home-slider owl-carousel">
+      <div
+        class="slider-item"
+        style="background-image: url('images/capiz-homepage-banner-celebratecapiznon.jpg')"
+        data-stellar-background-ratio="0.5"
+      >
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text align-items-center">
+            <div class="col-md-7 col-sm-12 ftco-animate">
+              <p class="breadcrumbs">
+                <span class="mr-2"><a href="index-2.html">Home</a></span>
+                <span>Events & Festivals</span>
+              </p>
+              <h1 class="mb-3 font-weight-bold">EVENTS AND FESTIVALS</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="py-5 container">
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Capiztahan_.jpg"
+                        alt="CAPIZTAHAN FESTIVAL" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">CAPIZTAHAN FESTIVAL</h5>
+                        <p class="card-text">Province of Capiz</p>
+                        <p class="card-text">
+                        <p>Capiztahan is a celebration of the birth of the Province of Capiz. On April 15, 1901, the United
+                            States Philippines Commission through Act. No. 115, entitled, “An Act Extending The Provisions
+                            Of The Provincial Government Act To The Province Of Capiz” established the province which now
+                            have one (1) city and sixteen (16) municipalities, divided into two districts.</p>
+    
+                        <p>Capiztahan is a celebration filled with numerous colorful activities and showcases not only the
+                            abundance of marine life and gastronomic cuisines, but also the unique interplay of shared
+                            history and diverse culture in the way of its people’s lives. This grand festival is not only to
+                            commemorate the foundation of the province but also the death anniversary of the late President
+                            Manuel A. Roxas.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/SINADYA-SA-HALARAN.jpg"
+                        alt="SINADYA SA INMACULADA CONCEPCION" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">SINADYA SA INMACULADA CONCEPCION</h5>
+                        <p class="card-text">Roxas City</p>
+                        <p class="card-text">
+                        <p>Sinadya literally means joy. The festival is held as a thanksgiving event for the city’s bounties
+                            especially those from the seas. The festival is a week-long celebration during the first week of
+                            December also commemorating the feast of the Immaculate Concepcion.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/PATABANG.jpg"
+                        alt="PATABANG Festival" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">PATABANG Festival</h5>
+                        <p class="card-text">Municipality of Tapaz</p>
+                        <p class="card-text">
+                        <p>Patabang was conceived to give identity to the Tapaznon people’s generosity of heart and the idea
+                            of coming into each other for help which is reflected in their way of life. “Pagpatabang” is one
+                            valuable trait of Tapaznons shown especially in times of great difficulty. It is also manifested
+                            during the planting and harvesting season, in preparing food during thanksgiving, in moving
+                            transferring a hut from one place to another which is a very iconic display of the bayanhihan
+                            spirit, and in many more activities in the Tapaznon’s simple way of living.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Sinaot_.jpg" alt="SINA-OT Festival"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">SINA-OT Festival</h5>
+                        <p class="card-text">Municipality of President Roxas</p>
+                        <p class="card-text">
+                        <p>Sinaot Festival was inspired by the Masskara Festival of Bacolod City that started in 1988, it is
+                            a street dancing contest among groups dancing to the tune of the Latin beat garbed in colorful
+                            Caribbean costume, depicting the culture and traditions of each tribe. This annual festival is
+                            held every 1st week of May, is the center piece of the town’s municipal and religious fiesta.
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/saulogfestival.jpg"
+                        alt="SAULOG Festival" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">SAULOG Festival</h5>
+                        <p class="card-text">Municipality of President Roxas</p>
+                        <p class="card-text">
+                        <p>Saulog Festival commemorates the Foundation day of the municipality of President Roxas. It is
+                            celebrated every 30th day of November each year. President Roxas was originally the small
+                            community of Lutod-lutod, Barrio Aranguel in the old town of Pilar. &nbsp;</p>
+    
+                        <p>The municipality was named in honor of President Manuel A. Roxas, the First President of the
+                            Third Republic of the Philippines, and was officially inaugurated on November 30, 1949 under
+                            Republic Act No. 374 that was signed into law by Elpidio Quirino.</p>
+    
+                        <p>Saulog is festive celebration that begins with an early morning drumbeat playing or
+                            “pamukaw-pukaw.” Other activities include Drum and Lyre Exhibition, civic parade, Battle of the
+                            Bands, Food Festival, Battle of the Sounds, Foundation Ball and the Lin-ay sang President Roxas
+                            Pageant.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/HIL-O HIL-O-FESTIVAL.jpg"
+                        alt="HIL-O HIL-O Festival" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">HIL-O HIL-O Festival</h5>
+                        <p class="card-text">Municipality of Maayon</p>
+                        <p class="card-text">
+                        <p>Hil-o Hil-o Festival connotes the exchange of mutual interdependence among the people of Maayon
+                            which can be expressed in many forms. It could simply be the act of offering a helping hand,
+                            rendering of services and giving of material donations for a relative, a friend or a neighbor
+                            who is holding a very important affair in the family. This Festival is celebrated annually every
+                            3rd week of February for three (3) days starting Thursday.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/GUYUM-GUYUMAN-FESTIVAL.jpg"
+                        alt="GUYUM – GUYUMAN Festival" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">GUYUM – GUYUMAN Festival</h5>
+                        <p class="card-text">Municipality of Pontevedra</p>
+                        <p class="card-text">
+                        <p>Guyum-Guyum Festival came from “Caguyuman,” the old name of Pontevedra, which means an ant hill.
+                            Because of its rich and abundant natural resources both from the coastal and upland areas, it
+                            attracted people from the nearby municipalities of Panay to which it once belonged. People from
+                            Panitan, Maayon and President Roxas would thrive in the market place of Pontevedra to trade,
+                            like a swarm of ants. Thus, the birth of Caguyuman. &nbsp;The festival is the tradition in
+                            celebrating life and as well as a way thanksgiving for the abundance that the Caguyumanons was
+                            blessed.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Inilusan.jpg"
+                        alt="INILUSAN Festival" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">INILUSAN Festival</h5>
+                        <p class="card-text">Municipality of Mambusao</p>
+                        <p class="card-text">
+                        <p>Inilusan was first introduced in 1975 in celebration of Mambusao’s annual cultural–religious
+                            festivity. This is a colourful pageant celebrated by way of recollecting the stories of Mambusao
+                            and depicting the historical and cultural growth of the town during the celebration of the town
+                            fiesta on November 25 in honour of Saint Catherine of Alexandria. The term Inilusan means the
+                            mutual and reciprocal giving and sharing of food and resources in generous measure and in the
+                            spirit of fraternal goodwill that permeates the daily life of Mambusaonons.&nbsp; Inilusan is
+                            celebrated with novenas and masses, merry-making, cultural shows, street dancing, parades,
+                            exhibits, a beauty pageant, food festival.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%" src="images/tugbong.JPG" alt="TUGBONG Festival"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">TUGBONG Festival</h5>
+                        <p class="card-text">Municipality of Panitan</p>
+                        <p class="card-text">
+                        <p>Tugbong Festival is a celebration filled with merry making, dancing, singing street dancing
+                            parade and many others joyous activities to give honor and recognition to every Paniteño who
+                            have contributed to the social, cultural, educational and economic development of the town and
+                            also to pay homage to their “kasimanwa” whose successes in life gave inspiration to the young
+                            generations. &nbsp;</p>
+    
+                        <p>Tugbong is also a celebration of the local customs, traditions, religious, and political
+                            activities during August 1-10 of every year. Before the highlight of this celebration in honor
+                            of St. Lawrence the Deacon, people from far barangay usually go down to town to buy their goods
+                            and other food to serve in their banquet for sharing and consumption. Hence, the practice is
+                            called tugbong that reflect the old ways of the Paniteños when they go down from the mountainous
+                            part of the town to visit their relatives and to trade. They carry all the way down livestock
+                            and agricultural products in exchange for any goods that would sustain their living. Historians
+                            called this “alista” or “tugbong.”</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/HIL-O-HANAY.jpg"
+                        alt="HIL-O-HANAY Festival" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">HIL-O-HANAY Festival</h5>
+                        <p class="card-text">Municipality of Sigma</p>
+                        <p class="card-text">
+                        <p>Hil-o Hanay Festival is a celebration of the Sigmahanon virtues of sharing, giving, volunteerism
+                            and oneness. It is also the way of showing this rich cultural tradition to the younger
+                            generation to continue the Hil-o-hanay spirit with passion. It is an attitude that denotes the
+                            act of voluntarily returning a favor done by another person. It gives honor to the noblest and
+                            highest virtue of “community-ness” of its people, their innate and common traits that keep the
+                            balance of their relationship with one another, their environment, and God.</p>
+    
+                        <p>Activities during this festive occasion include Payag Contest, Pailig it Lantay, Pagbunggad,
+                            Lutong Sigmahanon, Traditional Games, Composo, Harana, Duag Hil-o-hanya and Hil-ohanay sa Plaza.
+                            It is also in celebration of the Feast of St. John the Baptist.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/AGDAHANAY.jpg"
+                        alt="AGDAHANAY Festival" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">AGDAHANAY Festival</h5>
+                        <p class="card-text">Municipality of Cuartero</p>
+                        <p class="card-text">
+                        <p>Agadahanay Festival is celebrated every second week of June in honor of San Antonio de Padua, the
+                            patron saint of the town. "Agdahanay," is coined based on the people’s generosity of heart as
+                            reflected in their helpfulness, hospitality, sharing of concern for others and the
+                            “pagpang-agda”. The Agdahanay spirit lives on every Cuarteronhon in abundance or insufficiency
+                            and especially during disasters and calamities.</p>
+    
+                        <p>One of the highlights of the Agdahanay Festival is the procession of the image of San Antonio de
+                            Padua along the major streets with another caro that collects food or “Pandecillo de San
+                            Antonio” as the people’s way to offer thanksgiving to the Lord for the peace that reigns in the
+                            town and the blessings that they received through the intercession of San Antonio de Padua. It
+                            is followed by a High Mass and the Sayaw kay San Antonio de Padua, a dance ritual performed by
+                            young girls each holding a rope tied to the top of the pole. The fast-paced dancing while
+                            weaving the rope around the pole is the most anticipated part of this dance. Only after that
+                            when all Cuarteronhon’s open their houses’ doors for their guests.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Lingga-anay_0.jpg"
+                        alt="LINGA-ANAY FESTIVAL" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">LINGA-ANAY FESTIVAL</h5>
+                        <p class="card-text"> Municipality of Panay</p>
+                        <p class="card-text">
+                        <p>Lingga-anay Festival, a vivid and accurate interpretation of the Pan-ayanons’ deep love for our
+                            birthplace, strong sense of responsibility toward our fellow Panayanons is held every May 1-4
+                            annually. The term “lingga-anay” was derived from the Big Bell or “Dakung Lingganay” of the Sta.
+                            Monica Church known to be the Biggest Catholic Church Bell in Southeast Asia which the town of
+                            Panay is well-known for, not only locally but around the world. But on a patriotic note,
+                            “lingga-anay” means “to look back,” conveying to the Pan-ayanons outside the country to look
+                            back, come home and encourage them to invest on their homeland. The festival began in 1987
+                            during the Appointment to office of Vicente Bermejo.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/PADAGYAW-FESTIVAL.jpg"
+                        alt="PADAGYAW Festival" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">PADAGYAW Festival</h5>
+                        <p class="card-text">Municipality of Dumarao</p>
+                        <p class="card-text">
+                        <p>Padagyaw Festival mirrors the unity and cooperation of its people, and is celebrated every first
+                            week of August in honor of its patroness Nuestra Señora de las Nieves (Our Lady of Snows).
+                            Festival activities like the Pista ng Bayan, Civic Parade, Street Dancing Competition,
+                            Playground Demonstration and more manifests how Dumaraonon value group effort. From one
+                            fermented idea of planners, action men, and executions, they have translated their ideas and
+                            concepts into mass action of well-rehearsed and well-executed play and graceful rendition of
+                            songs and dances. &nbsp;</p>
+    
+                        <p>Padagyaw is a term of the natives of the town that mean the need for voluntary help in order to
+                            accomplish a task, without having to pay cash for the service rendered. As a thanksgiving, they
+                            gather for feast and merry making with the understanding that everyone partakes from the success
+                            of one. Padagyaw is a commonly used term by everyone especially by the Dumaraonon elders and is
+                            recognized as an indispensable tradition that has been passed from generation to generation.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/TILIBYUGAN-FESTIVAL.jpg"
+                        alt="TILIBYUGAN Festival " class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">TILIBYUGAN Festival </h5>
+                        <p class="card-text"> Municipality of Sapian</p>
+                        <p class="card-text">
+                        <p>The Tilibyugan Festival is the merging of two Festivals of Sapian celebrated from every 22nd to
+                            the 26th day of July. This festival is the grandest fiesta in honor of Saint Anne, their patron,
+                            during her month-feast, July of each year. Originating from the vernacular word “tibyug” which
+                            means to lift up or to support, tilibyugay of the Sapianons subscribes to the concept of lifting
+                            each other and supporting one another for a common welfare. Consequently, the said festival
+                            enhances their appreciation of cultural heritage.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Capiz Tourism Website</h2>
+                <p>
+                  Thank you for visiting this page. Hope to see you in Capiz!
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">ABOUT CAPIZ</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-2 d-block">History</a></li>
+                  <ul class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">How to Get There</ul>
+                    <li><a href="#" class="py-2 d-block">Transport Operators</a></li>
+                    <li><a href="#" class="py-2 d-block">Airport</a></li>
+                    <li><a href="#" class="py-2 d-block">Seaport</a></li>
+                    <li><a href="#" class="py-2 d-block">Terminals</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">TOURISM SERVICES</h2>
+                <ul class="list-unstyled">
+                  <li><a href="adventure&eco-tourism.html" class="py-2 d-block">Adventure and Eco-Tourism</a></li>
+                  <li><a href="touroperators.html" class="py-2 d-block">Tour Operators</a></li>
+                  <li><a href="convention-centers.html" class="py-2 d-block">Convention Centers</a></li>
+                  <li><a href="accomodations.html" class="py-2 d-block">Accomodations</a></li>
+                  <li><a href="specialty-shops.html" class="py-2 d-block">Specialty Shops</a></li>
+                  <li><a href="restaurants.html" class="py-2 d-block">Restaurants</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">CONTACT INFO</h2>
+                <ul class="list-unstyled">
+                  <li><a class="py-2 d-block" style="color: rgba(255, 255, 255, 0.5)">Provincial Tourism and Cultural Affairs Office Capiz Provincial Capitol, Roxas City, Capiz, 5800</a></li>
+                  <li><a href="#" class="py-2 d-block"><span class="__cf_email__"data-cfemail="ff96919990bf86908a8d8c968b9ad19c9092"
+                    >capiz.tourism@gmail.com</span></a></li>
+                  <li><a class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">(036) 6212-935</a></li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <ul
+                  class="ftco-footer-social list-unstyled float-md-right float-lft"
+                >
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>
+                Copyright &copy;
+                <script
+                  data-cfasync="false"
+                  src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+                ></script>
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart" aria-hidden="true"></i> by
+                <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle
+            class="path-bg"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke="#eeeeee"
+          />
+          <circle
+            class="path"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke-miterlimit="10"
+            stroke="#F96D00"
+          />
+        </svg>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/bootstrap-datepicker.js"></script>
+      <script src="js/jquery.timepicker.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+      <script src="js/google-map.js"></script>
+      <script src="js/main.js"></script>
+  
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+  
+        gtag("config", "UA-23581568-13");
+      </script>
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"7863b6172c430467","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  
+    <!-- Mirrored from preview.colorlib.com/theme/voyage/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Jan 2023 08:55:28 GMT -->
+  </html>
+  

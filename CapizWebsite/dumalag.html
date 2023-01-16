@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <title>Capiz Website</title>
+    <link rel="icon" href="images/capiz-nav-logo.png"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet"/>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css\city.css"/>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="assets/css/main.css" rel="stylesheet">
+    <script nonce="39cfabd5-6bce-4bba-956e-e1f2bd739ae6">
+      (function (w, d) {
+        !(function (eK, eL, eM, eN) {
+          eK.zarazData = eK.zarazData || {};
+          eK.zarazData.executed = [];
+          eK.zaraz = { deferred: [], listeners: [] };
+          eK.zaraz.q = [];
+          eK.zaraz._f = function (eO) {
+            return function () {
+              var eP = Array.prototype.slice.call(arguments);
+              eK.zaraz.q.push({ m: eO, a: eP });
+            };
+          };
+          for (const eQ of ["track", "set", "debug"])
+            eK.zaraz[eQ] = eK.zaraz._f(eQ);
+          eK.zaraz.init = () => {
+            var eR = eL.getElementsByTagName(eN)[0],
+              eS = eL.createElement(eN),
+              eT = eL.getElementsByTagName("title")[0];
+            eT && (eK.zarazData.t = eL.getElementsByTagName("title")[0].text);
+            eK.zarazData.x = Math.random();
+            eK.zarazData.w = eK.screen.width;
+            eK.zarazData.h = eK.screen.height;
+            eK.zarazData.j = eK.innerHeight;
+            eK.zarazData.e = eK.innerWidth;
+            eK.zarazData.l = eK.location.href;
+            eK.zarazData.r = eL.referrer;
+            eK.zarazData.k = eK.screen.colorDepth;
+            eK.zarazData.n = eL.characterSet;
+            eK.zarazData.o = new Date().getTimezoneOffset();
+            if (eK.dataLayer)
+              for (const eX of Object.entries(
+                Object.entries(dataLayer).reduce((eY, eZ) => ({
+                  ...eY[1],
+                  ...eZ[1],
+                }))
+              ))
+                zaraz.set(eX[0], eX[1], { scope: "page" });
+            eK.zarazData.q = [];
+            for (; eK.zaraz.q.length; ) {
+              const e_ = eK.zaraz.q.shift();
+              eK.zarazData.q.push(e_);
+            }
+            eS.defer = !0;
+            for (const fa of [localStorage, sessionStorage])
+              Object.keys(fa || {})
+                .filter((fc) => fc.startsWith("_zaraz_"))
+                .forEach((fb) => {
+                  try {
+                    eK.zarazData["z_" + fb.slice(7)] = JSON.parse(
+                      fa.getItem(fb)
+                    );
+                  } catch {
+                    eK.zarazData["z_" + fb.slice(7)] = fa.getItem(fb);
+                  }
+                });
+            eS.referrerPolicy = "origin";
+            eS.src =
+              "../../cdn-cgi/zaraz/sd0d9.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));
+            eR.parentNode.insertBefore(eS, eR);
+          };
+          ["complete", "interactive"].includes(eL.readyState)
+            ? zaraz.init()
+            : eK.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, 0, "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container-fluid">
+        <a href="index-2.html" id="navbar-Logo" class="trackme navbar-brand"><img src="images/capiz-logo.jpg" class="mx-auto d-block img-fluid" id="navbarbrand" alt="capiz-logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index-2.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="explorecapiz.html" class="nav-link">Explore Capiz</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience Capiz</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="events.html">Events</a>
+                <a class="dropdown-item" href="arts&crafts.html">Arts & Crafts</a>
+                <a class="dropdown-item" href="nature.html">Nature</a>
+                <a class="dropdown-item" href="faith-based.html">Faith-Based</a>
+                <a class="dropdown-item" href="farm.html">Farm</a>
+                <a class="dropdown-item" href="culture&heritage.html">Culture & Heritage</a>
+                <a class="dropdown-item" href="food.html">Food</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tourism Services</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="adventure&eco-tourism.html">Adventure and Eco Tourism</a>
+                <a class="dropdown-item" href="touroperators.html">Tour Operators</a>
+                <a class="dropdown-item" href="convention-centers.html">Convention Centers</a>
+                <a class="dropdown-item" href="accomodations.html">Accomodations</a>
+                <a class="dropdown-item" href="specialty-shops.html">Specialty Shops</a>
+                <a class="dropdown-item" href="restaurants.html">Restaurants</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Government</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Capiz</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-header d-flex align-items-center">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2 style="color: rgb(241, 91, 49);">Dumalag</h2>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Page Header -->
+  
+      <!-- ======= Gallery Single Section ======= -->
+      <section id="gallery-single" class="gallery-single">
+        <div class="container">
+  
+          <div class="position-relative h-100">
+            <div class="slides-1 portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+  
+                <div class="swiper-slide">
+                  <img src="images/capiz-explorecapiz-dumalag.jpg" alt="">
+                </div>
+              </div>
+          </div>
+  
+          <div class="row justify-content-between gy-4 mt-4">
+  
+            <div class="col-lg-8">
+              <div class="portfolio-description">
+                <h2 style="color: rgb(187, 255, 134);">Dumalag</h2>
+                <p>
+                    Dumalag is famous for its church, one of the oldest in the province, the St. Martin of Tours that was constructed between 1600 and 1720. Dumalag also features a natural wonder, the Suhot Cave and Spring, a series of interconnected caverns of different sizes with a pool of clear ice-cold water fed by a rock spring from within the cave. Another cave found in the municipality called Lahab, has fanciful formations of stalactites and stalagmites with side walls that are solid strontium and arched ceilings with prismatic crystals.
+                </p>
+                <p>
+                    According to the 2020 census, it has a population of 30,098 people. Dumalag is 44 kilometres (27 mi) from Roxas City.
+                </p>
+                <p>
+                    It is the birthplace of Jose Advincula, a cardinal of the Roman Catholic church appointed as the Archbishop of Manila in 2021.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End of Section -->
+
+      <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Capiz Tourism Website</h2>
+                <p>
+                  Thank you for visiting this page. Hope to see you in Capiz!
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">ABOUT CAPIZ</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-2 d-block ">History</a></li>
+                  <ul class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">How to Get There</ul>
+                    <li><a href="#" class="py-2 d-block">Transport Operators</a></li>
+                    <li><a href="#" class="py-2 d-block">Airport</a></li>
+                    <li><a href="#" class="py-2 d-block">Seaport</a></li>
+                    <li><a href="#" class="py-2 d-block">Terminals</a></li></ul>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">TOURISM SERVICES</h2>
+                <ul class="list-unstyled">
+                  <li><a href="adventure&eco-tourism.html" class="py-2 d-block">Adventure and Eco-Tourism</a></li>
+                  <li><a href="touroperators.html" class="py-2 d-block">Tour Operators</a></li>
+                  <li><a href="convention-centers.html" class="py-2 d-block">Convention Centers</a></li>
+                  <li><a href="accomodations.html" class="py-2 d-block">Accommodations</a></li>
+                  <li><a href="specialty-shops.html" class="py-2 d-block">Specialty Shops</a></li>
+                  <li><a href="restaurants.html" class="py-2 d-block">Restaurants</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">CONTACT INFO</h2>
+                <ul class="list-unstyled">
+                  <li><a class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">Provincial Tourism and Cultural Affairs Office Capiz Provincial Capitol, Roxas City, Capiz, 5800</a></li>
+                  <li><a href="#" class="py-2 d-block"><span class="__cf_email__"data-cfemail="ff96919990bf86908a8d8c968b9ad19c9092"
+                    >capiz.tourism@gmail.com</span></a></li>
+                  <li><a  class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">(036) 6212-935</a></li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <ul
+                  class="ftco-footer-social list-unstyled float-md-right float-lft"
+                >
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>
+                Copyright &copy;
+                <script
+                  data-cfasync="false"
+                  src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+                ></script>
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart" aria-hidden="true"></i> by
+                <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle
+            class="path-bg"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke="#eeeeee"
+          />
+          <circle
+            class="path"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke-miterlimit="10"
+            stroke="#F96D00"
+          />
+        </svg>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/bootstrap-datepicker.js"></script>
+      <script src="js/jquery.timepicker.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+      <script src="js/google-map.js"></script>
+      <script src="js/main.js"></script>
+  
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+  
+        gtag("config", "UA-23581568-13");
+      </script>
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"7863b6099a320467","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  
+    <!-- Mirrored from preview.colorlib.com/theme/voyage/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Jan 2023 08:55:23 GMT -->
+  </html>

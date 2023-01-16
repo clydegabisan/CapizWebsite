@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Capiz Website</title>
+    <link rel="icon" href="images/capiz-nav-logo.png"/>
+    <meta charset="utf-8" />
+    <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet"/>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script nonce="6ae3f23f-d88c-4642-812a-fb90469aa23f">
+      (function (w, d) {
+        !(function (eK, eL, eM, eN) {
+          eK.zarazData = eK.zarazData || {};
+          eK.zarazData.executed = [];
+          eK.zaraz = { deferred: [], listeners: [] };
+          eK.zaraz.q = [];
+          eK.zaraz._f = function (eO) {
+            return function () {
+              var eP = Array.prototype.slice.call(arguments);
+              eK.zaraz.q.push({ m: eO, a: eP });
+            };
+          };
+          for (const eQ of ["track", "set", "debug"])
+            eK.zaraz[eQ] = eK.zaraz._f(eQ);
+          eK.zaraz.init = () => {
+            var eR = eL.getElementsByTagName(eN)[0],
+              eS = eL.createElement(eN),
+              eT = eL.getElementsByTagName("title")[0];
+            eT && (eK.zarazData.t = eL.getElementsByTagName("title")[0].text);
+            eK.zarazData.x = Math.random();
+            eK.zarazData.w = eK.screen.width;
+            eK.zarazData.h = eK.screen.height;
+            eK.zarazData.j = eK.innerHeight;
+            eK.zarazData.e = eK.innerWidth;
+            eK.zarazData.l = eK.location.href;
+            eK.zarazData.r = eL.referrer;
+            eK.zarazData.k = eK.screen.colorDepth;
+            eK.zarazData.n = eL.characterSet;
+            eK.zarazData.o = new Date().getTimezoneOffset();
+            if (eK.dataLayer)
+              for (const eX of Object.entries(
+                Object.entries(dataLayer).reduce((eY, eZ) => ({
+                  ...eY[1],
+                  ...eZ[1],
+                }))
+              ))
+                zaraz.set(eX[0], eX[1], { scope: "page" });
+            eK.zarazData.q = [];
+            for (; eK.zaraz.q.length;) {
+              const e_ = eK.zaraz.q.shift();
+              eK.zarazData.q.push(e_);
+            }
+            eS.defer = !0;
+            for (const fa of [localStorage, sessionStorage])
+              Object.keys(fa || {})
+                .filter((fc) => fc.startsWith("_zaraz_"))
+                .forEach((fb) => {
+                  try {
+                    eK.zarazData["z_" + fb.slice(7)] = JSON.parse(
+                      fa.getItem(fb)
+                    );
+                  } catch {
+                    eK.zarazData["z_" + fb.slice(7)] = fa.getItem(fb);
+                  }
+                });
+            eS.referrerPolicy = "origin";
+            eS.src =
+              "../../cdn-cgi/zaraz/sd0d9.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));
+            eR.parentNode.insertBefore(eS, eR);
+          };
+          ["complete", "interactive"].includes(eL.readyState)
+            ? zaraz.init()
+            : eK.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, 0, "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container-fluid">
+        <a href="index-2.html" id="navbar-Logo" class="trackme navbar-brand"><img src="images/capiz-logo.jpg" class="mx-auto d-block img-fluid" id="navbarbrand" alt="capiz-logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index-2.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="explorecapiz.html" class="nav-link">Explore Capiz</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience Capiz</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="events.html">Events</a>
+                <a class="dropdown-item" href="arts&crafts.html">Arts & Crafts</a>
+                <a class="dropdown-item" href="nature.html">Nature</a>
+                <a class="dropdown-item" href="faith-based.html">Faith-Based</a>
+                <a class="dropdown-item" href="farm.html">Farm</a>
+                <a class="dropdown-item" href="culture&heritage.html">Culture & Heritage</a>
+                <a class="dropdown-item" href="food.html">Food</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tourism Services</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="adventure&eco-tourism.html">Adventure and Eco Tourism</a>
+                <a class="dropdown-item" href="touroperators.html">Tour Operators</a>
+                <a class="dropdown-item" href="convention-centers.html">Convention Centers</a>
+                <a class="dropdown-item" href="accomodations.html">Accomodations</a>
+                <a class="dropdown-item" href="specialty-shops.html">Specialty Shops</a>
+                <a class="dropdown-item" href="restaurants.html">Restaurants</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Government</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Capiz</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="home-slider owl-carousel">
+        <div class="slider-item" style="background-image: url('images/capiz-beach-scenery.jpeg')" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row slider-text align-items-center">
+              <div class="col-md-7 col-sm-12 ftco-animate">
+                <p class="breadcrumbs">
+                  <span class="mr-2"><a href="index-2.html">Home</a></span>
+                  <span>Nature</span>
+                </p>
+                <h1 class="mb-3 font-weight-bold">NATURE</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div class="py-5 container">
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Baybay_0.jpg" alt="Baybay Beach"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Baybay Beach</h5>
+                        <p class="card-text">Baybay, Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>Baybay Beach is the prime destination of Roxas City. Located 3 kilometers away from the city
+                            proper, this 12-kilometer stretch of black sand is a popular weekend spot for the local populace
+                            and those coming from the nearby towns and provinces. Considered a “must-see” spot while in
+                            Roxas City, Baybay Beach is ideal for swimming, snorkeling, boating, kayaking, skim boarding and
+                            other beach and water sports.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Cadimahan.jpg"
+                        alt="Cadimahan River Tour" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Cadimahan River Tour</h5>
+                        <p class="card-text">Lawis Baybay, Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>Opening out into Baybay Beach where Cadimahan River had its mouth is refuge to the marine life
+                            that survive only in contending fresh and seawater. &nbsp;Shouldered on both sides by varieties
+                            of mangroves is also an abode for those who seek peace and relaxation. &nbsp;Local folks offer
+                            an excitement of a dinner in a raft while serenade of folk songs makes tourist seem transported
+                            to paradise. &nbsp;Traditional massage by trained “hilot” makes an experience complete.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Palina_1.jpg"
+                        alt="PALINA RIVER TOUR" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">PALINA RIVER TOUR</h5>
+                        <p class="card-text">Cagay, Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>Located in Sitio Cablatan, Brgy. Cagay, Roxas City, Palina River and its adjacent areas are
+                            economic zones. The river bank lined with mangroves is about 1 km. in length not including the
+                            tributaries. Three thousand group cages are installed in the river with seafood they can buy and
+                            cook themselves or have them cooked by the fisherfolks trained in food preparation. &nbsp;</p>
+    
+                        <p>Palina Greenbelt Eco-Park offers mangrove tour, river tour and beach swimming. The Roxas City
+                            River Tours began as a program by the City Coastal Resource and Management Office for the
+                            preservation of our mangroves and river systems. Floating cabanas used for rent and used for
+                            tours, come in different sizes with different holding capacity. Now, the ecopark has become an
+                            educational recreation facility and a venue for community participation in rehabilitating the
+                            river and the mangrove ecosystem.</p>
+    
+                        <p>In 2016, it was declared grand winner of DOT-ATOP Pearl Awards for Best Practices in
+                            Community-based Responsible Tourism Enterprise. Last January 26, 2018, the ecopark was given the
+                            Best Urban Sustainable Product Award during the ASEAN Sustainable Tourism Awards in Chiang Mai,
+                            Thailand.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Culajao_0.jpg"
+                        alt="Culajao Mangrove Ecopark" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Culajao Mangrove Ecopark</h5>
+                        <p class="card-text">Culajao, Roxas City, Capiz</p>
+                        <p class="card-text">
+                        <p>Located at Barangay. Culajao, Roxas City, the Culajao Mangrove Ecopark is best for educational
+                            tours, family outings and group fellowship. Nineteen (19) species of mangroves is found in the
+                            ecopark that also serve as a habitat for a wide variety of fishes, crustaceans, mollusks, birds
+                            and insects.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Hinulugan.jpg"
+                        alt="Hinulugan Falls" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Hinulugan Falls</h5>
+                        <p class="card-text">Tabun-acan, Pilar, Capiz</p>
+                        <p class="card-text">
+                        <p>The well-known Hinulugan Falls of Barangay Tabun-acan is one of the tourist spots of the
+                            municipality of Pilar in Capiz. Travelers go on 30-minute hike to get to the top of the falls.
+                            There is a small chapel near the falls where mass can be heard. The area is also open to those
+                            who would like to conduct retreats by appointment. Hinulugan Falls serves as a water source of
+                            the community surrounding the falls and is considered as one of the major tourist attractions in
+                            the province of Capiz. According to tales passed from one generation to the next, there was a
+                            hunter who happened to chase after a deer in the forest. Not knowing that there was a waterfall
+                            ahead of him, he fell off the edge and into the waters. Thus, it was named Hinulugan.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Balisong.jpg"
+                        alt="BAL07ISONG CAVE COMPLEX" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">BALISONG CAVE COMPLEX</h5>
+                        <p class="card-text">Pilar, Capiz</p>
+                        <p class="card-text">
+                        <p>Balisong Cave is also known as Butete Cave. It has beautiful rock formations made of limestones.
+                            Its karsts formation and wildlife are unique and its limestone is one of the oldest in Panay
+                            Island. While it is of archaeological and ecological importance, it’s also of historical
+                            significance as it once was the graveyard of Balisong heroes. Artificants were buried inside the
+                            cave. It was also declared as a bird sanctuary.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Liktinon_0.jpg"
+                        alt="Liktinon Falls" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Liktinon Falls</h5>
+                        <p class="card-text">Bayuyan, Pres. Roxas, Capiz</p>
+                        <p class="card-text">
+                        <p>Liktinon falls is a natural-layered waterfall located within the protected forest areas of
+                            Barangay Bayuyan, President Roxas, Capiz. It has two known levels. The first level is 8 to 9
+                            feet tall and is inclined or sloped. The swimming area spans 40 to 60 meters and has a depth of
+                            13 to 16 feet. The water is cool and clear since the base of the area is filled with rocks. The
+                            surrounding forest area adds serenity and relaxation to those who swim. A few hiking steps above
+                            the first level is the second level which is taller at about 11 to 14 feet tall. Because of the
+                            difficulty in climbing, the second level is seldom visited. The trek going up to Liktinon falls
+                            is an adventure itself since you have to endure jumping from one boulder to another before
+                            reaching the falls and the swimming area.</p>
+    
+                        <p>The locals named the place to describe the process in going up to the waterfalls which is, “naga
+                            liktin-liktin” or to jump from one place to another hence, “Liktinon”.</p>
+    
+                        <p>The natural beauty and the challenging trails going up to the Liktinon Falls attract adventurous
+                            tourists. It is an eco-tourism site that is also a livelihood source for the people of Barangay
+                            Bayuyan.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Ecopark.jpg"
+                        alt="Capiz Eco-Park and Cultural Village" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Capiz Eco-Park and Cultural Village</h5>
+                        <p class="card-text">Nagba, Cuartero, Capiz</p>
+                        <p class="card-text">
+                        <p>Situated in Barangay Nagba in the Municipality of Cuartero, the Capiz Ecology Park nestles within
+                            a 14-hectare landmass of undulating terrain all covered with green vegetation comprised of
+                            trees, shrubs and bamboos, among others. Likewise, there are small farm lots devoted to rice
+                            production and forage plots as protein bank as well as ornamental gardens within the park’s
+                            landscape.</p>
+    
+                        <p>Capiz Eco-Park is the best place for those who seek a peaceful haven away from the city. It’s an
+                            ideal venue for family picnic, retreats, seminars, team-building activities, camps, and even
+                            just for anyone looking for a breather from a busy life. It also has a playground for kids and
+                            kids-at-heart who still enjoy playing outdoor games and running barefooted on the grass.&nbsp;
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Lahab.jpg" alt="Lahab Cave"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Lahab Cave</h5>
+                        <p class="card-text">San Miguel, Dumalag, Capiz</p>
+                        <p class="card-text">
+                        <p>Fanciful formations of stalactites and stalagmites make this a fascinating underground world. Its
+                            side walls are solid strontium and the ceilings are arched with prismatic crystals that flash
+                            and twinkle. On its floor are terraced miniature dams of cool water. The scenic hills and
+                            peaceful valleys on the surface are part of the place’s attraction.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Basiao.jpg" alt="Basiao Beach"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Basiao Beach</h5>
+                        <p class="card-text">Basiao, Ivisan, Capiz</p>
+                        <p class="card-text">
+                        <p>Only a thirty-minute ride from the town center, is the Basiao Beach, a long stretch of white sand
+                            in the coastal barangay of Basiao, Ivisan, Capiz, and the nearest jump-off point to the four
+                            nearby islands namely Marukol Dako, Marukol Gamay, Mahabang Pulo and Mabaay Island.</p>
+    
+                        <p>Lined-up along the highway are beach resorts offering cottages, bathing areas and rooms for
+                            tourists coming from the nearby municipalities and provinces.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Agustin.jpg"
+                        alt="Agustin Navarra Mangrove Forest and Bird Sanctuary" class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Agustin Navarra Mangrove Forest and Bird Sanctuary</h5>
+                        <p class="card-text">Agustin Navarra, Ivisan, Capiz</p>
+                        <p class="card-text">
+                        <p>The Agustin Navarra Mangrove Forest and Bird Sanctuary is an emerging ecotourism attraction in
+                            the province. Located in Agustin Navarra, Ivisan, Capiz, the place is home to local and
+                            migratory birds such as the Dugwak (Little Regret), Kuru (Green Backed Heron), Tulabong (Great
+                            Egret), Mansong (Marsh Tern), Sterna and Lapay (Pond Heron).</p>
+    
+                        <p>The indigenous species of mangroves that grow in the area include Bakawan Lalaki/Bakawan Babae –
+                            Phizophora, Bungalon – Avecenia Marina, Api-Api – Officinales, Piapi – Lanaya, Bungalon Puti –
+                            Arba and mangroves of the family Sonneratiaceae pedada.</p>
+    
+                        <p>These mangroves are natural barriers for storm surges and high tide, and a habitat for these
+                            native and migratory birds that has grown in population since its forests’ rehabilitation.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Kipot.jpg" alt="Kipot Cave"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Kipot Cave</h5>
+                        <p class="card-text">Burias, Mambusao, Capiz</p>
+                        <p class="card-text">
+                        <p>Kipot cave system is composed of at least 24 caves each with stream going through it. One of
+                            these caves is the Napandong Cave, a wet cave with a navigable stream going through it. Since
+                            this cave is inaccessible during floods, the cave formations are intact and well-preserved. The
+                            speleothems found at the cave ceilings, just above the water, are numerous, large, and active. A
+                            latent eco-tourism site, the cave is inhabited by different species of insects, bats and birds.
+                            A species of birds called “Salimbabatang” (swift birds) is a potential tourist attraction. The
+                            nests of the said bird are source of income for the locals. Speleothems or cave deposits such as
+                            stalactites and stalagmites are found inside the cave. Cave formations such as draperies and
+                            canopies are dominant. Other formations found are flowstones, columns, soda straws, canopies,
+                            bottlebrushes, coralloid/botroyoidal/ popcorn forms, shelf stone, and moon milk.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Suhoton.jpg" alt="Suhoton Cave"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Suhoton Cave</h5>
+                        <p class="card-text">Agcagay, Jamindan, Capiz</p>
+                        <p class="card-text">
+                        <p>Suhoton Cave is made up of 3 stocks and 48 chambers. There is the presence of the stalactites and
+                            stalagmites. The animals present at suhoton cave are bats, monkeys, snakes, centipedes, crabs,
+                            turtles, snails and lizards. It was said to be a hiding place of the Filipino and American
+                            soldiers from the Japanese during World War II. In the center of the Suhoton Cave, there is a
+                            wide area called Baylihan where it was told that it was used by American soldiers as party area
+                            where they brought women and let them dance. One of the chambers of the Suhoton Cave is believed
+                            to be the way to get to the municipality of Dumalag. There is also a chamber in the cave with a
+                            rock that sounds as loud as an agong instrument once hit. It is also believed that in Suhoton
+                            Cave, there is a tower that offers a view of the whole area of Camp Peralta once you go through
+                            it.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Marugo.jpg" alt="Marugo Lake"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Marugo Lake</h5>
+                        <p class="card-text">San Antonio, Tapaz, Capiz</p>
+                        <p class="card-text">
+                        <p>Marugo Lake is a 20-minute drive from the town proper of Tapaz to its humble barangay, San
+                            Antonio. It is considered as a prime trip destination in the municipality during summer break.
+                            Surrounded by a long range of green hills, Lake Marugo’s jade-hued waters reflect the blue sky
+                            and the hills – a natural sight good for tourists searching for a peaceful break. &nbsp;</p>
+    
+                        <p>Lake Marugo also provides the best place for outdoor activities like swimming, boating, fishing,
+                            trekking, rafting and camping. A swimming pool on the elevated part of the lake’s bank offers an
+                            excellent viewpoint of the lake and the hills. Renting floating cottages in the middle of the
+                            lake is also a good option for the guests. &nbsp;</p>
+    
+                        <p>According to the locals, during the old days, the fresh catch would drain blood from being
+                            caught, thus, “gadugo-dugo,” which was what the lake was named after.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Kataw.jpg" alt="Kataw Falls"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Kataw Falls</h5>
+                        <p class="card-text">Olalo, Pilar, Capiz</p>
+                        <p class="card-text">
+                        <p>In one of the mountains of of Olalo, Pilar, Capiz is a humble refuge for tourists seeking a
+                            natural experience. The Kataw Falls, born of the ruins of the Azure Mining in the late 70’s,
+                            cascades from Kataw Gamay Falls in a higher part of the mountain into a shaded pool and a river.
+                        </p>
+    
+                        <p>The name Kataw originated from a folktale known from a long time ago. It was told that during the
+                            full moon, the local residents would hear a voice of a woman singing from the middle of the
+                            waterfall. In the eagerness to find out who the maiden was, they sneaked to the mountains and
+                            found out that it was a mermaid. In awe, they exclaimed, “Kataw! Kataw!” which is the native
+                            term for mermaid. Thus, the place was named.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Suhot.jpg"
+                        alt="Suhot Cave and Spring " class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Suhot Cave and Spring </h5>
+                        <p class="card-text">Dolores, Dumalag, Capiz</p>
+                        <p class="card-text">
+                        <p>Located just 300 meters away from the provincial road, the Suhot Cave and Spring in Dumalag,
+                            Capiz is a series of interconnected caverns of different sizes with a pool of clear ice-cold
+                            water fed by a rock spring from within the cave. Suhot is believed to have a connecting tunnel
+                            to the Badiang Cave in Dumarao since both caves are found in the same mountain and are only 6
+                            kilometers apart.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-4 row">
+            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                <div class="rounded-0 card"><img width="100%"
+                        src="images/Gugma.jpg" alt="Gugma Beach"
+                        class="rounded-0 card-img-top">
+                    <div class="experience-content card-body">
+                        <h5 class="text-uppercase card-title">Gugma Beach</h5>
+                        <p class="card-text">Lonoy, Sapian, Capiz</p>
+                        <p class="card-text">
+                        <p>The beach is located at the eastern part of Lonoy. It is rich when it comes to different water
+                            resources such as fishes and aquatic resources. This beach in Sapian is praised because of its
+                            rock formations, sea breeze and bluish water that attract tourists.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Capiz Tourism Website</h2>
+                <p>
+                  Thank you for visiting this page. Hope to see you in Capiz!
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">ABOUT CAPIZ</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-2 d-block ">History</a></li>
+                  <ul class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">How to Get There</ul>
+                    <li><a href="#" class="py-2 d-block">Transport Operators</a></li>
+                    <li><a href="#" class="py-2 d-block">Airport</a></li>
+                    <li><a href="#" class="py-2 d-block">Seaport</a></li>
+                    <li><a href="#" class="py-2 d-block">Terminals</a></li></ul>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">TOURISM SERVICES</h2>
+                <ul class="list-unstyled">
+                  <li><a href="adventure&eco-tourism.html" class="py-2 d-block">Adventure and Eco-Tourism</a></li>
+                  <li><a href="touroperators.html" class="py-2 d-block">Tour Operators</a></li>
+                  <li><a href="convention-centers.html" class="py-2 d-block">Convention Centers</a></li>
+                  <li><a href="accomodations.html" class="py-2 d-block">Accomodations</a></li>
+                  <li><a href="specialty-shops.html" class="py-2 d-block">Specialty Shops</a></li>
+                  <li><a href="restaurants.html" class="py-2 d-block">Restaurants</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">CONTACT INFO</h2>
+                <ul class="list-unstyled">
+                  <li><a class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">Provincial Tourism and Cultural Affairs Office Capiz Provincial Capitol, Roxas City, Capiz, 5800</a></li>
+                  <li><a href="#" class="py-2 d-block"><span class="__cf_email__"data-cfemail="ff96919990bf86908a8d8c968b9ad19c9092"
+                    >capiz.tourism@gmail.com</span></a></li>
+                  <li><a  class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">(036) 6212-935</a></li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <ul
+                  class="ftco-footer-social list-unstyled float-md-right float-lft"
+                >
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>
+                Copyright &copy;
+                <script
+                  data-cfasync="false"
+                  src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+                ></script>
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart" aria-hidden="true"></i> by
+                <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle
+            class="path-bg"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke="#eeeeee"
+          />
+          <circle
+            class="path"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke-miterlimit="10"
+            stroke="#F96D00"
+          />
+        </svg>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/bootstrap-datepicker.js"></script>
+      <script src="js/jquery.timepicker.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+      <script src="js/google-map.js"></script>
+      <script src="js/main.js"></script>
+  
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+  
+        gtag("config", "UA-23581568-13");
+      </script>
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"7863b6099a320467","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  
+    <!-- Mirrored from preview.colorlib.com/theme/voyage/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Jan 2023 08:55:23 GMT -->
+  </html>
+  

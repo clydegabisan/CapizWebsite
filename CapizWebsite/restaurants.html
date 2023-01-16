@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Capiz Website</title>
+    <link rel="icon" href="images/capiz-nav-logo.png"/>
+    <meta charset="utf-8" />
+    <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet"/>
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script nonce="6ae3f23f-d88c-4642-812a-fb90469aa23f">
+      (function (w, d) {
+        !(function (eK, eL, eM, eN) {
+          eK.zarazData = eK.zarazData || {};
+          eK.zarazData.executed = [];
+          eK.zaraz = { deferred: [], listeners: [] };
+          eK.zaraz.q = [];
+          eK.zaraz._f = function (eO) {
+            return function () {
+              var eP = Array.prototype.slice.call(arguments);
+              eK.zaraz.q.push({ m: eO, a: eP });
+            };
+          };
+          for (const eQ of ["track", "set", "debug"])
+            eK.zaraz[eQ] = eK.zaraz._f(eQ);
+          eK.zaraz.init = () => {
+            var eR = eL.getElementsByTagName(eN)[0],
+              eS = eL.createElement(eN),
+              eT = eL.getElementsByTagName("title")[0];
+            eT && (eK.zarazData.t = eL.getElementsByTagName("title")[0].text);
+            eK.zarazData.x = Math.random();
+            eK.zarazData.w = eK.screen.width;
+            eK.zarazData.h = eK.screen.height;
+            eK.zarazData.j = eK.innerHeight;
+            eK.zarazData.e = eK.innerWidth;
+            eK.zarazData.l = eK.location.href;
+            eK.zarazData.r = eL.referrer;
+            eK.zarazData.k = eK.screen.colorDepth;
+            eK.zarazData.n = eL.characterSet;
+            eK.zarazData.o = new Date().getTimezoneOffset();
+            if (eK.dataLayer)
+              for (const eX of Object.entries(
+                Object.entries(dataLayer).reduce((eY, eZ) => ({
+                  ...eY[1],
+                  ...eZ[1],
+                }))
+              ))
+                zaraz.set(eX[0], eX[1], { scope: "page" });
+            eK.zarazData.q = [];
+            for (; eK.zaraz.q.length;) {
+              const e_ = eK.zaraz.q.shift();
+              eK.zarazData.q.push(e_);
+            }
+            eS.defer = !0;
+            for (const fa of [localStorage, sessionStorage])
+              Object.keys(fa || {})
+                .filter((fc) => fc.startsWith("_zaraz_"))
+                .forEach((fb) => {
+                  try {
+                    eK.zarazData["z_" + fb.slice(7)] = JSON.parse(
+                      fa.getItem(fb)
+                    );
+                  } catch {
+                    eK.zarazData["z_" + fb.slice(7)] = fa.getItem(fb);
+                  }
+                });
+            eS.referrerPolicy = "origin";
+            eS.src =
+              "../../cdn-cgi/zaraz/sd0d9.js?z=" +
+              btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));
+            eR.parentNode.insertBefore(eS, eR);
+          };
+          ["complete", "interactive"].includes(eL.readyState)
+            ? zaraz.init()
+            : eK.addEventListener("DOMContentLoaded", zaraz.init);
+        })(w, d, 0, "script");
+      })(window, document);
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container-fluid">
+        <a href="index-2.html" id="navbar-Logo" class="trackme navbar-brand"><img src="images/capiz-logo.jpg" class="mx-auto d-block img-fluid" id="navbarbrand" alt="capiz-logo"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#ftco-nav"
+          aria-controls="ftco-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index-2.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="explorecapiz.html" class="nav-link">Explore Capiz</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Experience Capiz</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="events.html">Events</a>
+                <a class="dropdown-item" href="arts&crafts.html">Arts & Crafts</a>
+                <a class="dropdown-item" href="nature.html">Nature</a>
+                <a class="dropdown-item" href="faith-based.html">Faith-Based</a>
+                <a class="dropdown-item" href="farm.html">Farm</a>
+                <a class="dropdown-item" href="culture&heritage.html">Culture & Heritage</a>
+                <a class="dropdown-item" href="food.html">Food</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tourism Services</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="adventure&eco-tourism.html">Adventure and Eco Tourism</a>
+                <a class="dropdown-item" href="touroperators.html">Tour Operators</a>
+                <a class="dropdown-item" href="convention-centers.html">Convention Centers</a>
+                <a class="dropdown-item" href="accomodations.html">Accomodations</a>
+                <a class="dropdown-item" href="specialty-shops.html">Specialty Shops</a>
+                <a class="dropdown-item" href="restaurants.html">Restaurants</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Government</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Capiz</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="home-slider owl-carousel">
+        <div class="slider-item" style="background-image: url('images/tourism-services-banner_3.jpg')" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row slider-text align-items-center">
+              <div class="col-md-7 col-sm-12 ftco-animate">
+                <p class="breadcrumbs">
+                  <span class="mr-2"><a href="index-2.html">Home</a></span>
+                  <span>Restaurants</span>
+                </p>
+                <h1 class="mb-3 font-weight-bold">RESTAURANTS</h1>
+              </div>
+          </div>
+        </div>
+      </section>
+    <div class="container">
+        <div class="no-gutters row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div id="tourismservices-introsection" class="text-white">
+                    <p>
+                    <p>Famous as being the “Seafood Capital of the Philippines”, Capiz has no shortage of good places to
+                        experience great food - especially the specialties of the sea! Expect the freshest catch served by
+                        the friendliest of smiles in any of the fine establishments below.</p>
+                    </p>
+                </div>
+                <div class="d-block d-md-none d-lg-block">
+                    <div class="no-gutters row">
+                        <div class="d-flex align-items-center justify-content-center px-2 py-2 col-3"
+                            style="background-color: rgb(34, 117, 180);"><img
+                                src="images/capiz-tourismservices-restaurants-icon_4.png"
+                                class="img-fluid" alt="icon"></div>
+                        <div class="text-white d-flex align-items-center tourismservices-subcontent col-9">
+                            <p>Capiz boasts restaurants and eateries that serve culinary masterpieces that will sure whet
+                                even the most discerning of appetites.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6"><img
+                    src="images/capiz-tourismservices-restaurants-img_5.jpg"
+                    class="img-fluid" id="tourismservices-img" alt="img"></div>
+        </div>
+    </div>
+    <section id="tourism-services">
+        <div class="px-4 services-content pb-5 container">
+            <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1">
+                    <div class="row">
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">ANOT'S GALLEY GRILL AND RESTAURANT (DOT Accredited)</p>
+                            <p>
+                            <p>Washington Street, Brgy. VI, Roxas City, Capiz<br>
+                                Contact: 09988655905<br><a style="color:rgb(62, 62, 255)"
+                                                >https://www.facebook.com/anots08/?ref=br_rs</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">AQUATICO/ABUELO/VERANDA RESTAURANT at Espacio Verde Resort</p>
+                            <p>
+                            <p>Brgy. Dayao, Roxas City, Capiz<br>
+                                Contact: (036) 620-3734 / 09173739596<br><a style="color:rgb(62, 62, 255)"
+                                                    ><span lang="EN-PH"
+                                                        xml:lang="EN-PH">http://www.espacioverde-resort.com/</a><br><a style="color:rgb(62, 62, 255)"
+                                                    ><span lang="EN-PH"
+                                                        xml:lang="EN-PH">https://www.facebook.com/EV.espacioverderesort/</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">CAFÉ FELISA at San Antonio Resort</p>
+                            <p>
+                            <p>Brgy. Baybay, Roxas City, Capiz<br>
+                                Contact: (036) 621-6638<br><a style="color:rgb(62, 62, 255)"
+                                                >http://www.thesanantonioresort.com/</a><br><a style="color:rgb(62, 62, 255)"
+                                    >https://www.facebook.com/SanAntonioResort/</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">CAFÉ PUEBLO (DOT Accredited)</p>
+                            <p>
+                            <p>Pueblo De Panay, Lawaan, Roxas City, Capiz<br>
+                                Contact: 09173065577 / 09055008229<br><a style="color:rgb(62, 62, 255)"
+                                    >https://www.facebook.com/Caf%C3%A9-Pueblo-2808420329470211/?ref=br_rs</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">CAFÉ PULCHRA AT MARJORIE’S HOMESTAY</p>
+                            <p>
+                            <p>Poblacion Pilar, Capiz<br>
+                                Contact: 09999944991<br><a style="color:rgb(62, 62, 255)"
+                                    >https://www.facebook.com/Cafe-Pulchra-at-Marjories-Homestay-432663276900995/</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">CAFÉ TERRAZA </p>
+                            <p>
+                            <p>Sacred Heart of Jesus Avenue, Pueblo De Panay, Lawaan, Roxas City, Capiz<br>
+                                Contact: 09173121498 / 09399271447<br><a style="color:rgb(62, 62, 255)"
+                                    >https://www.facebook.com/cafeterraza/</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">COCO VERANDA BAR AND RESTAURANT (DOT Accredited)</p>
+                            <p>
+                            <p>Baybay, Roxas City<br>(036) 621-6185/0998 8655 808
+                                <br><a style="color:rgb(62, 62, 255)"
+                                    >https://www.facebook.com/cocoverandacapiz/</a>
+    
+    
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">FESTA RESTO (DOT Accredited)</p>
+                            <p>
+                            <p>Pueblo de Panay, Lawaan, Roxas City, Capiz<br>(036) 6216 658</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">FOUNDER'S FOOD BAR (DOT Accredited)</p>
+                            <p>
+                            <p>Pueblo de Panay, Lawaan, Roxas City, Capiz<br>0917 100 0493</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">ISLAND’S VISTA CAFÉ AND BAR at Island’s Hotel</p>
+                            <p>
+                            <p>Sacred Heart of Jesus Avenue, Pueblo De Panay, Lawaan, Roxas City, Capiz<br>Contact: (036)
+                                658-0553 / 09175588111 / 09338683563</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">LLOYDIE'S CAFE (DOT Accredited)</p>
+                            <p>
+                            <p>Ground Floor, Capiz Government and Business Center, Roxas City, Capiz<br>09189309088</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">MJVK RESTAURANT</p>
+                            <p>
+                            <p>SITIO PALAGTINGAN, BRGY. AGAMBULONG, JAMINDAN, CAPIZ<br>
+                                Cliffordf648@gmail.com<br>
+                                0948-675-8720</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">MVW RESTAURANT &amp; TOURIST INN</p>
+                            <p>
+                            <p>Roxas Avenue, Roxas City, Capiz<br>
+                                Contact: (036) 621-2956 / 621-1216<br><span><span><span><a style="color:rgb(62, 62, 255)"
+                                                >http://www.mvwrestauranttouristinn.yolasite.com/</a><br><a style="color:rgb(62, 62, 255)"
+                                    >hhttps://www.facebook.com/mvwhotelroxas/</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">NANAY LORDING'S COFFEE SHOP</p>
+                            <p>
+                            <p>BRGY. POBLACION ILAWOD, PANAY, CAPIZ<br><a style="color:rgb(62, 62, 255)">marlamaybaes05@gmail.com</a><br>
+                                0961-556-9912</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">NESTA’S HILLTOP HOTEL AND RESTAURANT </p>
+                            <p>
+                            <p>Provincial Park, Roxas City, Capiz<br>
+                                Contact: (036) 621-2609 / 621-1185<br><a style="color:rgb(62, 62, 255)"
+                                    >https://www.facebook.com/pages/Nestas-Hilltop-Hotel/196959380334665</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">ORIENTAL KITCHEN (DOT Accredited)</p>
+                            <p>
+                            <p>St. Joseph Avenue, Pueblo de Panay, Roxas City, Capiz<br>09171321525/ 0998991815</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">PANSITAN KUYA IAN RESTAURANT</p>
+                            <p>
+                            <p>BRGY. POBLACION SUR, SIGMA, CAPIZ<br><a style="color:rgb(62, 62, 255)"
+                                    >Pansitan.capiz@outlook.com</a><br>
+                                0995-854-0605</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">PERIENG'S RESTAURANT</p>
+                            <p>
+                            <p>BRGY. DULANGAN, PILAR, CAPIZ <br><a style="color:rgb(62, 62, 255)">carmel_joy22@yahoo.com</a><br>
+                                0998-290-0258</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">RED SUN RESTAURANT</p>
+                            <p>
+                            <p>Gaisano Arcade, Arnaldo Blvd., Roxas City, Capiz<br>
+                                Contact: (036) 621-0810<br><a style="color:rgb(62, 62, 255)"
+                                    >https://www.facebook.com/pages/Red-Sun/176801602373046</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">TAMBAYAN SA RTF SNACK HOUSE</p>
+                            <p>
+                            <p>BRGY. LUCERO, JAMINDAN, CAPIZ<br>
+                                alexiane081186@gmail.com</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">THE BEACH HOUSE AND BAR</p>
+                            <p>
+                            <p>SAN JUAN, BRGY. BAYBAY, ROXAS CITY, CAPIZ<br><a style="color:rgb(62, 62, 255)">atty_rjh@yahoo.com</a><br>
+                                0961-653-6373</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">THE GALLEON SPANISH-ILONGGO RESTAURANT (affiliated with Spanggo
+                                Foods Café and Pasalubong Center) </p>
+                            <p>
+                            <p>Rizal Street, Brgy. VI, Roxas City, Capiz<br>
+                                Contact: (036) 522-8848<br><a style="color:rgb(62, 62, 255)"
+                                                >https://www.facebook.com/Spanggo-Foods-Cafe-and-Pasalubong-Center-298227386936091/</a></span></span></span>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">THE GALLERY CAFÉ at Roxas President’s Inn</p>
+                            <p>
+                            <p>Corner Rizal-Lopez Jaena Street, Roxas City, Capiz<br>
+                                Contact: (036) 621-0208 / 621-2208 / 09178032277<br><a style="color:rgb(62, 62, 255)"
+                                                >http://roxaspresidentsinn.com/</a>><br><a style="color:rgb(62, 62, 255)"
+                                                >https://www.facebook.com/roxaspresidentsinn/</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">THE KAFFA HAUS</p>
+                            <p>
+                            <p><em>ISLANDS HOTEL, SACRED HEART OF JESUS AVENUE, BRGY. LAWA-AN, ROXAS CITY, CAPIZ </em>
+                                <br><a style="color:rgb(62, 62, 255)">islandshotelpdp@gmail.com </a><br>
+                                (036) 658-0553</p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">THE KAFFA HAUS at Island’s Hotel (DOT Accredited)</p>
+                            <p>
+                            <p>Sacred Heart of Jesus Avenue, Pueblo De Panay, Lawaan, Roxas City, Capiz<br>
+                                Contact: 09175588111<br><a style="color:rgb(62, 62, 255)"
+                                    >https://www.facebook.com/KAFFAbread.coffee.pastry/</a>
+                            </p>
+                            </p>
+                        </div>
+                        <div class="mt-4 col-12 col-md-6">
+                            <p class="font-weight-bold mb-0">THE WAYFARER BAR AND RESTAURANT </p>
+                            <p>
+                            <p>Hernandez Ave., Baybay, Roxas City, Capiz<br>
+                                Contact: (036) 621-1479<br><a style="color:rgb(62, 62, 255)"
+                                                >https://www.facebook.com/thewayfarerbar/</a>
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">Capiz Tourism Website</h2>
+                <p>
+                  Thank you for visiting this page. Hope to see you in Capiz!
+                </p>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">ABOUT CAPIZ</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-2 d-block">History</a></li>
+                  <ul class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">How to Get There</ul>
+                    <li><a href="#" class="py-2 d-block">Transport Operators</a></li>
+                    <li><a href="#" class="py-2 d-block">Airport</a></li>
+                    <li><a href="#" class="py-2 d-block">Seaport</a></li>
+                    <li><a href="#" class="py-2 d-block">Terminals</a></li></ul>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">TOURISM SERVICES</h2>
+                <ul class="list-unstyled">
+                    <li><a href="adventure&eco-tourism.html" class="py-2 d-block">Adventure and Eco-Tourism</a></li>
+                    <li><a href="touroperators.html" class="py-2 d-block">Tour Operators</a></li>
+                    <li><a href="convention-centers.html" class="py-2 d-block">Convention Centers</a></li>
+                    <li><a href="accomodations.html" class="py-2 d-block">Accomodations</a></li>
+                    <li><a href="specialty-shops.html" class="py-2 d-block">Specialty Shops</a></li>
+                    <li><a href="restaurants.html" class="py-2 d-block">Restaurants</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">CONTACT INFO</h2>
+                <ul class="list-unstyled">
+                  <li><a class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">Provincial Tourism and Cultural Affairs Office Capiz Provincial Capitol, Roxas City, Capiz, 5800</a></li>
+                  <li><a href="#" class="py-2 d-block"><span class="__cf_email__"data-cfemail="ff96919990bf86908a8d8c968b9ad19c9092"
+                    >capiz.tourism@gmail.com</span></a></li>
+                  <li><a class="py-2 d-block" style="color:rgba(255, 255, 255, 0.5)">(036) 6212-935</a></li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <ul
+                  class="ftco-footer-social list-unstyled float-md-right float-lft"
+                >
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li class="ftco-animate">
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>
+                Copyright &copy;
+                <script
+                  data-cfasync="false"
+                  src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+                ></script>
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart" aria-hidden="true"></i> by
+                <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+          <circle
+            class="path-bg"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke="#eeeeee"
+          />
+          <circle
+            class="path"
+            cx="24"
+            cy="24"
+            r="22"
+            fill="none"
+            stroke-width="4"
+            stroke-miterlimit="10"
+            stroke="#F96D00"
+          />
+        </svg>
+      </div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery-migrate-3.0.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/jquery.waypoints.min.js"></script>
+      <script src="js/jquery.stellar.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.animateNumber.min.js"></script>
+      <script src="js/bootstrap-datepicker.js"></script>
+      <script src="js/jquery.timepicker.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+      <script src="js/google-map.js"></script>
+      <script src="js/main.js"></script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+  
+        gtag("config", "UA-23581568-13");
+      </script>
+      <script
+        defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"7863b6172c430467","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  
+    <!-- Mirrored from preview.colorlib.com/theme/voyage/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 08 Jan 2023 08:55:28 GMT -->
+  </html>
+  
